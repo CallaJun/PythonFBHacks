@@ -10,7 +10,7 @@ def thank():
     graph1 = GraphAPI(token)
     
     vid=input("Enter your Facebook id: ")
-    query=str(vid)+"/feed?fields=id&limit=100000000"
+    query=str(vid)+"/tagged?fields=id&limit=5000"
     r=graph1.get(query)
     tempidlist = []
     idlist = []
