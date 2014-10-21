@@ -1,4 +1,4 @@
-#This script comments on all posts victim has written. Does not comment on posts friends have made. See FBcommentfeed.py
+#This program comments on all posts on the victim's wall, not just posts they have written
 import json
 import fb                     #To install this package run: sudo pip install fb
 from facepy import GraphAPI   #To install this package run: sudo pip install facepy
@@ -9,7 +9,7 @@ def spam():
     graph1 = GraphAPI(token)
     
     vid=input("Enter victim's id: ")
-    query=str(vid)+"/posts?fields=id&limit=5000000000"
+    query=str(vid)+"/feed?fields=id&limit=5000000000"
     r=graph1.get(query)
     
     idlist=[x['id'] for x in r['data']]
