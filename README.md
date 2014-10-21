@@ -33,6 +33,6 @@ This is a repo of various different Python Facebook hacks. This is used only for
 **To install "fb" and "facepy" libraries:** 
 
 <ul>
-<li>fb: to install this package run "sudo pip install fb"</li>
-<li>facepy: to install this package run "sudo pip install facepy"</li>
+<li>fb: to install this package run "sudo pip install fb"</li> in terminal
+<li>facepy: to install this package run "sudo pip install facepy"</li> in terminal
 </ul>
