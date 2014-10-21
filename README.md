@@ -9,9 +9,9 @@ This is a repo of various different Python Facebook hacks. This is used only for
 
 <ol>
 <li>Get a Facebook Graph API access token at: https://developers.facebook.com/tools/explorer</li>
-<li>Open terminal and run python.</li>
-<li>Make sure "fb" and "facepy" libraries are installed (see comments for instructions).</li>
-<li>Run program.</li>
+<li>Open terminal and run python</li>
+<li>Make sure "fb" and "facepy" libraries are installed*</li>
+<li>Run program</li>
 </ol>
 
 **Currently functioning:**
@@ -27,4 +27,12 @@ This is a repo of various different Python Facebook hacks. This is used only for
 
 <ul>
 <li>FBthankbirthdayposts (comments on all happy birthday posts)</li>
+</ul>
+
+*
+**To install "fb" and "facepy" libraries:** 
+
+<ul>
+<li>fb: to install this package run "sudo pip install fb"</li>
+<li>facepy: to install this package run "sudo pip install facepy"</li>
 </ul>
