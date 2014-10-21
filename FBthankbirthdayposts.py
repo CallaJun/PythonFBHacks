@@ -1,16 +1,16 @@
-#Not quite working. Only working on test account, not more complex ones.
+#Not quite working. Scalability problem - works with a few posts, but not with many.
 #For some reason, "message" doesn't exist in line 22-23....
 import json
 import fb                     #To install this package run: sudo pip install fb
 from facepy import GraphAPI   #To install this package run: sudo pip install facepy
 
 def thank():
-    token="CAACEdEose0cBAEWb2jPapUwT0AchEL3tctpQa7JABZCJKZBspeiGznqOlSEnP6FIGqO3sJzYqeulE5vBHhb9Cq15eBM58ZBYh4e4EBpFvAkMpOOZAgVapXeoYuKcatI75tEQ1qwVpePHBcHLu9vns0dSSr4oyGHcB4KcpKBjtpTueM8jx9w6BQe4ZAlT4kHmIJQdmPKF4DvjBSqSSxgZBamx38GxQeESEZD"
+    token="#"
     facebook=fb.graph.api(token)
     graph1 = GraphAPI(token)
     
     vid=input("Enter your Facebook id: ")
-    query=str(vid)+"/feed?fields=id&limit=5000000000"
+    query=str(vid)+"/feed?fields=id&limit=100000000"
     r=graph1.get(query)
     tempidlist = []
     idlist = []
@@ -24,10 +24,8 @@ def thank():
     print tempidlist
     print messagelist
     for message in messagelist:
-        if ("birthday" in message) or ("happy" in message):
+        if ("birthday" in message) or ("happy" in message) or ("bday" in message):
             idlist.append(tempidlist[messagelist.index(message)])
-        else:
-            continue
     print("There are "+ str(len(idlist)) +" birthday posts.")
 
     char1=raw_input("Do you want to proceed? (y/n) ")
