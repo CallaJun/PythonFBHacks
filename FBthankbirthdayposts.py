@@ -5,7 +5,7 @@ import fb                     #To install this package run: sudo pip install fb
 from facepy import GraphAPI   #To install this package run: sudo pip install facepy
 
 def thank():
-    token="#"
+    token="CAACEdEose0cBABAP6ZCSktW41IoHzb7kp1kOqPZBolhJRBqLZC3ZCDzmioLcCKu6m2FBOoE3pg8ihooSBUSyCD7S1juQBVouqj0ZCvuU4ZBfxpDeuhDZAzkv2MHPPlylAsAhRvLGcmgtaiOJRnOxFRA6wnttBW01wnOJj8VrFQMn79Qu3wOWmfAmmDPzjWBNQrZCsmMfmjpJoTyQcUELJQRifWwMIwZCF3mUZD"
     facebook=fb.graph.api(token)
     graph1 = GraphAPI(token)
     
