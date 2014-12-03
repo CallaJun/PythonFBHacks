@@ -1,5 +1,7 @@
 PythonFBHacks
 =============
+[![PyPI version](https://badge.fury.io/py/fb.svg)](http://badge.fury.io/py/fb) 
+[![PyPI version](https://badge.fury.io/py/facepy.svg)](http://badge.fury.io/py/facepy)
 
 This is a repo of various different Python Facebook hacks. This is used only for educational purposes and should <strong>NOT</strong> be misused. Please be aware that Facebook has automated spam banning functionalities so use or overuse of these programs may results in banning, suspension, or other similar consequences. 
 
